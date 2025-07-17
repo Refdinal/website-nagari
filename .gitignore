@@ -1,0 +1,19 @@
+# Admin (misal pakai Vite atau React)
+admin/node_modules/
+admin/dist/
+admin/.env.development
+admin/.env.production
+
+# Client (misal pakai Vite atau React)
+client/node_modules/
+client/dist/
+client/.env.development
+client/.env.production
+
+# Server (misal pakai Node.js / Express)
+server/node_modules/
+server/.env
+
+
+# Optional log
+*.log
