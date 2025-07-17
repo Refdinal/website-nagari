@@ -1,0 +1,626 @@
+/* General section styling */
+.pkk {
+  /* Container */
+  .container-scroll {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .scrollable-div {
+    width: 1200px;
+    height: 1200px;
+    overflow: auto; /* Aktifkan scroll hanya pada div ini */
+  }
+
+  .inner-div {
+    width: 1200px;
+    height: 1200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(100, 1%);
+    grid-template-rows: repeat(100, 1%);
+    padding-top: 10px;
+  }
+  .foto {
+    grid-area: 1 / 1 / 5 / 5;
+  }
+  .foto img {
+    width: 100%; /* Mengisi lebar div sepenuhnya */
+    height: 100%; /* Mengisi tinggi div sepenuhnya */
+    object-fit: contain; /* Menjaga aspek rasio gambar dan tidak terpotong */
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
+  .tagcontainer {
+    background-color: lightblue;
+    grid-area: 1 / 5 / 5 / 17;
+    border-radius: 5%;
+  }
+  .tagcontainer2 {
+    background-color: lightblue;
+    grid-area: 1 / 1 / 5 / 17;
+    border-radius: 5%;
+  }
+  .tag1 {
+    background-color: rgb(105, 139, 240);
+    padding: 2px;
+    border-radius: 3px;
+    width: 100%;
+    height: 50%;
+    white-space: nowrap; /* Mencegah teks membungkus ke baris baru */
+    overflow: visible; /* Mengizinkan teks tampil penuh meskipun lebih panjang */
+    text-overflow: clip; /* Menghindari teks dipotong atau ditampilkan dengan elipsis */
+    font-size: 1em; /* Ukuran font */
+    display: flex; /* Menggunakan flexbox untuk mempermudah pengaturan posisi */
+    justify-content: center; /* Ketengahkan teks secara horizontal */
+    align-items: center; /* Ketengahkan teks secara vertikal */
+    text-align: center; /* Memastikan teks tetap terpusat */
+    font-weight: bold;
+  }
+  .tag3 {
+    background-color: rgb(105, 139, 240);
+    padding: 2px;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap; /* Mencegah teks membungkus ke baris baru */
+    overflow: visible; /* Mengizinkan teks tampil penuh meskipun lebih panjang */
+    text-overflow: clip; /* Menghindari teks dipotong atau ditampilkan dengan elipsis */
+    font-size: 1em; /* Ukuran font */
+    display: flex; /* Menggunakan flexbox untuk mempermudah pengaturan posisi */
+    justify-content: center; /* Ketengahkan teks secara horizontal */
+    align-items: center; /* Ketengahkan teks secara vertikal */
+    text-align: center; /* Memastikan teks tetap terpusat */
+    font-weight: bold;
+  }
+  .tag2 {
+    width: 100%;
+    height: 50%;
+    white-space: nowrap; /* Mencegah teks membungkus ke baris baru */
+    overflow: visible; /* Mengizinkan teks tampil penuh meskipun lebih panjang */
+    text-overflow: clip; /* Menghindari teks dipotong atau ditampilkan dengan elipsis */
+    font-size: 0.8rem; /* Ukuran font */
+    display: flex; /* Menggunakan flexbox untuk mempermudah pengaturan posisi */
+    justify-content: center; /* Ketengahkan teks secara horizontal */
+    align-items: center; /* Ketengahkan teks secara vertikal */
+    text-align: center; /* Memastikan teks tetap terpusat */
+    font-weight: bold;
+  }
+
+  .pembina {
+    grid-area: 1 / 2 / 6 / 22;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .ketua {
+    grid-area: 1 / 40 / 6 / 61;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .wakilketua1 {
+    grid-area: 10 / 40 / 15 / 61;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .wakilketua2 {
+    grid-area: 18 / 40 / 23 / 61;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .sekretaris1 {
+    grid-area: 25 / 2 / 30 / 22;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .sekretaris2 {
+    grid-area: 32 / 2 / 37 / 22;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .bendahara {
+    grid-area: 28 / 79 / 33 / 99;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .pokja1 {
+    grid-area: 40 / 5 / 43 / 25;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .pokja2 {
+    grid-area: 40 / 28 / 43 / 48;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .pokja3 {
+    grid-area: 40 / 54 / 43 / 74;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .pokja4 {
+    grid-area: 40 / 78 / 43 / 98;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .ketuapokja1 {
+    grid-area: 45 / 5 / 50 / 25;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .ketuapokja2 {
+    grid-area: 45 / 28 / 50 / 48;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .ketuapokja3 {
+    grid-area: 45 / 54 / 50 / 74;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .ketuapokja4 {
+    grid-area: 45 / 78 / 50 / 98;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .sekretarispokja1 {
+    grid-area: 52 / 5 / 57 / 25;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .sekretarispokja2 {
+    grid-area: 52 / 28 / 57 / 48;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .sekretarispokja3 {
+    grid-area: 52 / 54 / 57 / 74;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .sekretarispokja4 {
+    grid-area: 52 / 78 / 57 / 98;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota1pokja1 {
+    grid-area: 59 / 5 / 64 / 25;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota1pokja2 {
+    grid-area: 59 / 28 / 64 / 48;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota1pokja3 {
+    grid-area: 59 / 54 / 64 / 74;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota1pokja4 {
+    grid-area: 59 / 78 / 64 / 98;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota2pokja1 {
+    grid-area: 66 / 5 / 71/ 25;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota2pokja2 {
+    grid-area: 66 / 28 / 71 / 48;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota2pokja3 {
+    grid-area: 66 / 54 / 71 / 74;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota2pokja4 {
+    grid-area: 66 / 78 / 71 / 98;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota3pokja1 {
+    grid-area: 73 / 5 / 78 / 25;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota3pokja2 {
+    grid-area: 73 / 28 /78 / 48;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota3pokja3 {
+    grid-area: 73 / 54 /78 / 74;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota3pokja4 {
+    grid-area: 73 / 78 /78 / 98;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota4pokja1 {
+    grid-area: 80 / 5 /85/ 25;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .anggota4pokja3 {
+    grid-area: 80 / 54 /85 / 74;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+  .anggota4pokja4 {
+    grid-area: 80 / 78 /85 / 98;
+    display: grid;
+    grid-template-columns: repeat(16, 6.25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .tegak1 {
+    grid-area: 6 / 52 / 10 / 53;
+    border-left: 2px solid black;
+  }
+  .tegak2 {
+    grid-area: 15 / 52 / 18 / 53;
+    border-left: 2px solid black;
+  }
+  .tegak3 {
+    grid-area: 23 / 52 / 39 / 53;
+    border-left: 2px solid black;
+  }
+  .tegak4 {
+    grid-area: 27 / 26 / 34 / 53;
+    border-left: 2px solid black;
+  }
+  .tegak11 {
+    grid-area: 39 / 15 / 40 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak12 {
+    grid-area: 39 / 38 / 40 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak13 {
+    grid-area: 39 / 64 / 40 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak14 {
+    grid-area: 39 / 88 / 40 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak21 {
+    grid-area: 43 / 15 / 45 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak22 {
+    grid-area: 43 / 38 / 45 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak23 {
+    grid-area: 43 / 64 / 45 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak24 {
+    grid-area: 43 / 88 / 45 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak31 {
+    grid-area: 50 / 15 / 52 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak32 {
+    grid-area: 50 / 38 / 52 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak33 {
+    grid-area: 50 / 64 / 52 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak34 {
+    grid-area: 50 / 88 / 52 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak41 {
+    grid-area: 57 / 15 / 59 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak42 {
+    grid-area: 57 / 38 / 59 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak43 {
+    grid-area: 57 / 64 / 59 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak44 {
+    grid-area: 57 / 88 / 59 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak51 {
+    grid-area: 64 / 15 / 66 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak52 {
+    grid-area: 64 / 38 / 66 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak53 {
+    grid-area: 64 / 64 / 66 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak54 {
+    grid-area: 64 / 88 / 66 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak61 {
+    grid-area: 71 / 15 / 73 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak62 {
+    grid-area: 71 / 38 / 73 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak63 {
+    grid-area: 71 / 64 / 73 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak64 {
+    grid-area: 71 / 88 / 73 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak71 {
+    grid-area: 78 / 15 / 80 / 101;
+    border-left: 2px solid black;
+  }
+
+  .tegak73 {
+    grid-area: 78 / 64 / 80 / 101;
+    border-left: 2px solid black;
+  }
+  .tegak74 {
+    grid-area: 78 / 88 / 80 / 101;
+    border-left: 2px solid black;
+  }
+
+  .datar1 {
+    grid-area: 3 / 22 / 11 / 40;
+    border-top: 2px solid black;
+  }
+  .datar2 {
+    grid-area: 30 / 26 / 50 / 79;
+    border-top: 2px solid black;
+  }
+  .datar3 {
+    grid-area: 27 / 22 / 50 / 26;
+    border-top: 2px solid black;
+  }
+  .datar4 {
+    grid-area: 34 / 22 / 50 / 26;
+    border-top: 2px solid black;
+  }
+  .datar5 {
+    grid-area: 39 / 15 / 50 / 88;
+    border-top: 2px solid black;
+  }
+  /* Heading 1 (Sejarah Nagari) */
+  h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  /* Headings (Subheading for h2-h6) */
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  h2:before,
+  h3:before,
+  h4:before,
+  h5:before,
+  h6:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #d35400;
+    border-radius: 5px;
+  }
+
+  /* Font sizes for each heading */
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  /* Paragraphs */
+  p {
+    color: #34495e;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+
+  /* Lists (for the 8 tasks) */
+  ol {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  ol li {
+    color: #2980b9;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Specific styling for the ordered list */
+  ol li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* Adding a smooth hover effect to list items */
+  ol li:hover {
+    background-color: #d35400;
+    color: #fff;
+  }
+
+  /* Enhancing the blockquote for emphasis */
+  blockquote {
+    font-size: 1.2rem;
+    color: #2980b9;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 4px solid #d35400;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+  }
+
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+
+  /* Responsiveness for mobile */
+  @media (max-width: 768px) {
+    .container-scroll {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .scrollable-div {
+      width: 800px;
+      height: 800px;
+      overflow: auto; /* Aktifkan scroll hanya pada div ini */
+    }
+
+    .inner-div {
+      width: 800px;
+      height: 800px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: repeat(100, 1%);
+      grid-template-rows: repeat(100, 1%);
+    }
+    .tag1 {
+      font-size: 0.6em;
+    }
+    .tag2 {
+      font-size: 0.45em;
+    }
+    .tag3 {
+      font-size: 0.6em;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1.8rem;
+    }
+
+    p,
+    ol li {
+      font-size: 1rem;
+    }
+  }
+}

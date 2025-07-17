@@ -1,0 +1,121 @@
+/* General section styling */
+
+/* Container */
+
+/* Heading 1 (Sejarah Nagari) */
+.profile h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* Heading 2 (Subheading) */
+.profile h2 {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Paragraphs */
+.profile p {
+  color: #34495e;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Lists (for the 8 tasks) */
+.profile ol {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile ol li {
+  color: #2980b9;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Highlight the section titles with a border and background */
+.profile h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f1c40f;
+  color: #2c3e50;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.profile h2:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #d35400;
+  border-radius: 5px;
+}
+
+/* Specific styling for the ordered list */
+.profile ol li {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Adding a smooth hover effect to list items */
+.profile ol li:hover {
+  background-color: #d35400;
+  color: #fff;
+}
+
+/* Enhancing the blockquote for emphasis */
+.profile blockquote {
+  font-size: 1.2rem;
+  color: #2980b9;
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-left: 4px solid #d35400;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+.profile table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.profile th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+.profile th {
+  background-color: #f4f4f4;
+}
+/* Responsiveness for mobile */
+@media (max-width: 768px) {
+  .profile h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile h2 {
+    font-size: 1.8rem;
+  }
+
+  .profile p,
+  .profile ol li {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+/* Custom style for Nav Links */
+.nav-link-custom {
+  position: relative;
+  color: #ffffff !important; /* Warna dasar putih */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffcc00; /* Kuning */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  color: #ffcc00 !important; /* Warna kuning saat hover */
+}
+
+.nav-link-custom:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Style for active nav link */
+.nav-link-custom.active {
+  color: #ffcc00 !important; /* Warna kuning untuk link aktif */
+}
+
+/* Tambahan style untuk dropdown */
+.navbar .dropdown-toggle {
+  color: #ffffff !important; /* Warna putih untuk dropdown trigger */
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar .dropdown-toggle.nav-link-custom:hover {
+  color: #ffcc00 !important; /* Warna kuning saat hover di dropdown */
+}
+
+.dropdown-menu {
+  background-color: #3c6e71 !important; /* Warna background dropdown */
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  color: #ffffff !important; /* Warna putih pada item dropdown */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+  color: #ffcc00 !important; /* Warna kuning saat hover pada item dropdown */
+  background-color: transparent !important; /* Hilangkan background hover */
+}

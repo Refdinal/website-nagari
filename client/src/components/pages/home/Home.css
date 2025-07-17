@@ -1,0 +1,235 @@
+/* Home.css */
+.carousel-caption-bg {
+  background-color: rgba(0, 0, 0, 0.6); /* Warna hitam semi-transparan */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-glow {
+  color: #fff; /* Warna putih */
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Mempertebal bayangan teks */
+  font-size: 1.5rem; /* Ukuran font yang lebih besar */
+}
+
+.caption-animate {
+  animation: fadeInUp 1s ease-in-out; /* Animasi masuk */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.card-img {
+  width: 100%; /* Atur lebar gambar agar sesuai dengan kolom */
+  height: 150px; /* Atur tinggi gambar agar konsisten */
+  object-fit: cover; /* Menjaga proporsi gambar dan mengisi area dengan benar */
+}
+/* Gradasi gelap pada bagian atas carousel */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%; /* Menggelapkan bagian atas saja */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 70%);
+  z-index: 1;
+}
+
+/* Animasi Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 767px) {
+  .text-glow {
+    font-size: 1.2rem; /* Ukuran font lebih kecil untuk layar HP */
+  }
+
+  .carousel-caption-bg {
+    padding: 15px; /* Kurangi padding agar lebih cocok untuk layar kecil */
+  }
+}
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.marquee-content .card-title {
+  font-size: 14px; /* Ukuran font yang pas */
+  white-space: normal; /* Izinkan teks turun ke bawah */
+  word-wrap: break-word; /* Pastikan kata panjang bisa turun */
+  overflow-wrap: break-word; /* Alternatif pemecahan kata */
+  text-align: center; /* Pusatkan teks */
+  max-width: 100%; /* Sesuaikan dengan card */
+  display: block; /* Pastikan teks tidak dalam satu baris inline */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.card {
+  display: inline-block;
+  margin-right: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+/* parallax */
+.parallax-section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+/* overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* spinner */
+.spinner-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8); /* Background transparan */
+}
+
+.loading-circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-logo {
+  width: 150px;
+  height: auto;
+  animation: grow-shrink 2s ease-in-out infinite; /* Animasi membesar dan mengecil */
+}
+
+/* Lingkaran berputar */
+.loading-circle::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 4px solid rgba(0, 0, 0, 0.1); /* Warna lingkaran luar */
+  border-top-color: #3498db; /* Warna lingkaran bagian atas */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite; /* Animasi berputar */
+}
+
+/* Animasi Membesar dan Mengecil */
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1); /* Ukuran normal */
+  }
+  50% {
+    transform: scale(1.2); /* Membesar */
+  }
+  100% {
+    transform: scale(1); /* Kembali ke ukuran normal */
+  }
+}
+
+/* Animasi Spin */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* button  */
+.btn-custom {
+  background-color: white;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 3rem;
+  border-radius: 50px; /* Untuk rounded-pill */
+}
+
+.btn-custom:hover {
+  background-color: #ffc107;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  ol li {
+    font-size: 1rem;
+  }
+  .text-glow {
+    font-size: 0.7rem;
+  }
+}
