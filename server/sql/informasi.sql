@@ -15,6 +15,14 @@ CREATE TABLE informasi (
     views INTEGER DEFAULT 0,
     time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+ALTER TABLE informasi
+ADD COLUMN paragraph5 TEXT,
+ADD COLUMN paragraph6 TEXT,
+ADD COLUMN paragraph7 TEXT,
+ADD COLUMN paragraph8 TEXT,
+ADD COLUMN paragraph9 TEXT,
+ADD COLUMN paragraph10 TEXT;
+
 INSERT INTO informasi (title, slug, paragraph1, paragraph2, paragraph3, paragraph4, image,imgcap,pdf, category, author, status) 
 VALUES (
     'Manfaat Teknologi dalam Pendidikan', 

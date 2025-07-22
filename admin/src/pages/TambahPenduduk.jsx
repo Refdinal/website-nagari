@@ -439,7 +439,7 @@ const TambahPenduduk = () => {
                           <option value="PAUD / TK / RA">PAUD / TK / RA</option>
                           <option value="BELUM TAMAT SD / MI">BELUM TAMAT SD / MI</option>
                           <option value="TAMAT SD / MI / SEDERAJAT">TAMAT SD / MI / SEDERAJAT</option>
-                          <option value="SMP / MTs / SEDERAJAT">SMP / MTs / SEDERAJAT</option>
+                          <option value="SMP / MTS / SEDERAJAT">SMP / MTs / SEDERAJAT</option>
                           <option value="SMA / SMK / MA / SEDERAJAT">SMA / SMK / MA / SEDERAJAT</option>
                           <option value="DIPLOMA I (D1)">DIPLOMA I (D1)</option>
                           <option value="DIPLOMA II (D2)">DIPLOMA II (D2)</option>
@@ -497,13 +497,16 @@ const TambahPenduduk = () => {
                             <Form.Label className="fw-bold">Dusun</Form.Label>
                             <Form.Select name="dusun" value={formData.dusun} onChange={handleChange} required>
                               <option value="">-- PILIH DUSUN --</option>
-                              <option value="KAYU AMPEK">KAYU AMPEK</option>
-                              <option value="KAMPUNG BARU">KAMPUNG BARU</option>
-                              <option value="KAMPUNG BUDI">KAMPUNG BUDI</option>
-                              <option value="PARIK PANJANG">PARIK PANJANG</option>
-                              <option value="KAMPUNG TANGAH">KAMPUNG TANGAH</option>
-                              <option value="KAMPUNG TAPI">KAMPUNG TAPI</option>
-                              <option value="BANSA">BANSA</option>
+                              <option value="KAMPUNG JAMBAK">KAMPUNG JAMBAK - BANSA</option>
+                              <option value="KAMPUNG PISANG">KAMPUNG PISANG - BANSA</option>
+                              <option value="KAMPUNG KOTO">KAMPUNG KOTO - BANSA</option>
+                              <option value="SIPANJANG">SIPANJANG - BANSA</option>
+                              <option value="KAYU AMPEK">KAYU AMPEK - PAKAN SINAYAN</option>
+                              <option value="KAMPUNG BARU">KAMPUNG BARU - PAKAN SINAYAN</option>
+                              <option value="KAMPUNG BUDI">KAMPUNG BUDI - PAKAN SINAYAN</option>
+                              <option value="PARIK PANJANG">PARIK PANJANG - PAKAN SINAYAN</option>
+                              <option value="KAMPUNG TANGAH">KAMPUNG TANGAH - PAKAN SINAYAN</option>
+                              <option value="KAMPUNG TAPI">KAMPUNG TAPI - PAKAN SINAYAN</option>
                             </Form.Select>
                           </Form.Group>
                         </Col>
